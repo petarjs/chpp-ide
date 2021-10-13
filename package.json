@@ -2,15 +2,26 @@
   "name": "chpp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel",
+    "build": "parcel build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cyrillic-to-latin": "^2.0.0",
     "monaco-editor": "^0.28.0",
-    "normalize.css": "^8.0.1"
-  }
+    "normalize.css": "^8.0.1",
+    "@swc/helpers": "^0.2.13"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.0-rc.0",
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-webmanifest": "^2.0.0-rc.0",
+    "cssnano": "^5.0.8",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.9"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
