@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: black;
+}
+
+.hero {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.code {
+  height: 100vh;
+  width: 70%;
+}
+
+.result {
+  flex: 1;
+}
+
+.result {
+  background: #1e1e1e;
+  padding: 20px;
+  color: #fafafa;
+}
+
+.result * {
+  color: #fafafa;
+}
+
+.result-output-code {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.code-example {
+  font-family: monospace;
+}
+
+.code-example {
+  margin: 5px;
+}
+
+.quantox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  z-index: 5;
+}
+
+@media screen and (max-width: 320px) {
+  .quantox {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-bottom: 200px;
+  }
+}
+
+.debug-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: greenyellow;
+  padding: 30px 20vw;
+  font-size: 32px;
+  overflow: scroll;
+  font-family: monospace;
+}
+
+.show {
+  display: initial;
+}
+
+.debug-button {
+  z-index: 100;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
