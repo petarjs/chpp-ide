@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ћ плус плус</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Primary Meta Tags -->
+    <title>Ћ Плус Плус - Програмски језик на ћирилици</title>
+    <meta name="title" content="Ћ Плус Плус - Програмски језик на ћирилици" />
+    <meta
+      name="description"
+      content="Уживајте у програмирању као никада до сада уз Ћ Плус Плус - програмски језик на српском, па још и на ћирилици!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ћпп.срб" />
+    <meta
+      property="og:title"
+      content="Ћ Плус Плус - Програмски језик на ћирилици"
+    />
+    <meta
+      property="og:description"
+      content="Уживајте у програмирању као никада до сада уз Ћ Плус Плус - програмски језик на српском, па још и на ћирилици!"
+    />
+    <meta property="og:image" content="./preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ћпп.срб" />
+    <meta
+      property="twitter:title"
+      content="Ћ Плус Плус - Програмски језик на ћирилици"
+    />
+    <meta
+      property="twitter:description"
+      content="Уживајте у програмирању као никада до сада уз Ћ Плус Плус - програмски језик на српском, па још и на ћирилици!"
+    />
+    <meta property="twitter:image" content="./preview.png" />
+  </head>
+  <body>
+    <section class="hero is-success">
+      <div class="">
+        <div class="title">
+          <img src="./images/logo.png" alt="" width="50" class="va-m" />
+          плус плус <span class="tag is-white">v0.2.64</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="" style="display: flex">
+      <div class="js-code code" id="editor"></div>
+      <div class="result">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <span class="icon va-m">
+              <i class="material-icons">assessment</i> </span
+            >&nbsp;
+            <strong>Резултат</strong>
+          </div>
+
+          <div>
+            <button class="js-execute button is-success">
+              <span class="icon">
+                <i class="material-icons">play_arrow</i> </span
+              >&nbsp; Изврши код
+            </button>
+            <button class="js-debug button is-warning debug-button">
+              <span class="icon"> <i class="material-icons">warning</i> </span>
+            </button>
+            <a
+              class="button is-primary"
+              title="Dokumentacija"
+              href="https://xn--o1aa6f.xn--90a3ac/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="icon">
+                <i class="material-icons">text_snippet</i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="result-output">
+          <div class="js-output result-output-code"></div>
+        </div>
+      </div>
+    </div>
+
+    <pre class="js-debug-overlay debug-overlay"></pre>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
